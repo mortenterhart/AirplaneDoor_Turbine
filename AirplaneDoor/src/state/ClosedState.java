@@ -2,13 +2,12 @@ package state;
 
 import door.AirplaneDoor;
 
-public class OpenState implements IDoorState {
-    private final String label = "S0";
-    private final String stateDescription = "open";
+public class ClosedState implements IDoorState {
+    private final String label = "S1";
+    private final String stateDescription = "closed";
 
-    @Override
     public void promote(AirplaneDoor door) {
-        door.setState(new ClosedState());
+        door.setState(new LockedState());
     }
 
     public String getLabel() {

@@ -1,8 +1,13 @@
 package state;
 
-public interface IDoorState {
+import door.AirplaneDoor;
 
-    default void setState(/*AirplaneDoor door*/) {
-        //door.setState(this);
-    }
+public interface IDoorState {
+    int numberOfStates = 4;
+
+    void promote(AirplaneDoor door);
+
+    String getStateDescription();
+
+    String getLabel();
 }

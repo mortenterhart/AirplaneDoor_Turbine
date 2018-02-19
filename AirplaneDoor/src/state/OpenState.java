@@ -7,7 +7,7 @@ public class OpenState implements IDoorState {
     private final String stateDescription = "open";
 
     @Override
-    public void promote(AirplaneDoor door) {
+    public void applyNewState(AirplaneDoor door) {
         door.setState(new ClosedState());
     }
 

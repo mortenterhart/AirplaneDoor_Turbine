@@ -6,7 +6,7 @@ public class ClosedState implements IDoorState {
     private final String label = "S1";
     private final String stateDescription = "closed";
 
-    public void promote(AirplaneDoor door) {
+    public void applyNewState(AirplaneDoor door) {
         door.setState(new LockedState());
     }
 

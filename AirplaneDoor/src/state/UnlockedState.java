@@ -6,7 +6,7 @@ public class UnlockedState implements IDoorState {
     private final String label = "S3";
     private final String stateDescription = "unlocked";
 
-    public void promote(AirplaneDoor door) {
+    public void applyNewState(AirplaneDoor door) {
         door.setState(new OpenState());
     }
 

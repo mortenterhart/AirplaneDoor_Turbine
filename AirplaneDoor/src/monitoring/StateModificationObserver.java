@@ -1,12 +1,23 @@
 package monitoring;
 
+import logging.Logger;
 import state.IDoorState;
 
-public class StateModificationObserver {
+public class StateModificationObserver implements IStateObserver {
+    private int observerId = 0;
 
-    public void stateChangedTo(IDoorState state) {
-        System.out.println("StateModificationObserver received message:");
-        System.out.println("> airplane door switched into state " + state.getLabel() + " (" +
+    public StateModificationObserver(int id) {
+        observerId = id;
+    }
+
+    public void notifyStateChange(IDoorState state) {
+        Logger.instance.log("StateModificationObserver " + observerId + " received message:");
+        Logger.instance.log("> airplane door switched into state " + state.getLabel() + " (" +
                 state.getStateDescription() + ")");
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + " (id " + observerId + ")";
     }
 }

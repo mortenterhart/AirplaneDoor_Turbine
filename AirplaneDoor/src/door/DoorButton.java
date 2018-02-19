@@ -19,7 +19,7 @@ public class DoorButton {
         return state;
     }
 
-    public void promote(AirplaneDoor door) {
-        state.promote(door);
+    public void press(AirplaneDoor door) {
+        state.applyNewState(door);
     }
 }

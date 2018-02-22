@@ -26,10 +26,22 @@ public class AirplaneDoor {
         listeners.add(observer);
     }
 
+    public void removeObserver(IStateObserver observer) {
+        listeners.remove(observer);
+    }
+
+    public List<IStateObserver> getObservers() {
+        return listeners;
+    }
+
     public void setState(IDoorState state) {
         Logger.instance.log("--- Door State was modified to " + state.getStateDescription());
         button.setState(state);
         notifyListeners(state);
+    }
+
+    public IDoorState getState() {
+        return button.getState();
     }
 
     private void notifyListeners(IDoorState state) {

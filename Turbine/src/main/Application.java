@@ -1,7 +1,8 @@
 package main;
 
-import blade.CarbonBlade;
-import blade.ShovelBlade;
+import command.NextBladeCommand;
+import command.RobotRemoteControl;
+import command.StartCommand;
 import logging.Logger;
 import robot.TurbineRobot;
 import turbine.AirplaneTurbine;
@@ -14,6 +15,16 @@ public class Application {
 
     private void execute() {
         AirplaneTurbine turbine = new AirplaneTurbine();
+        TurbineRobot robot = new TurbineRobot(turbine.getBlades());
+        RobotRemoteControl control = new RobotRemoteControl(robot);
+
+        control.setCommand(new StartCommand());
+        control.pressButton();
+
+        for (int i = 0; i < turbine.getBlades().size(); i++) {
+            control.setCommand(new NextBladeCommand());
+            control.pressButton();
+        }
     }
 
     private void prepareShutdown() {

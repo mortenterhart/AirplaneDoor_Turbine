@@ -38,6 +38,7 @@ public class TurbineRobot implements IShovelBladeVisitor {
         if (hasNextBlade()) {
             boolean checkSuccessful = listIterator.next().checkStatus(this);
             System.out.println(checkSuccessful);
+            return;
         }
 
         throw new NoSuchElementException();

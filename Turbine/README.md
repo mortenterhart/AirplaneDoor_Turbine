@@ -9,6 +9,14 @@ sukzessive – beginnend mit der Schaufel Titan und Index 1 – jede Schaufel mi
 geeigneten Prüfverfahren. Über die Kommandos `start`, `stop`, `naechste` wird der Roboter
 von einem Mechaniker über eine Fernbedienung gesteuert.
 
+---
+
+**HINWEIS**
+
+Die Klassendiagramme zu dieser Aufgabe liegen im [Verzeichnis `uml/`](uml).
+
+---
+
 ## Wichtige Hinweise zur Aufgabenstellung
 * Zeitansatz pro Aufgabe:
     * Modellierung: maximal 12 Minuten

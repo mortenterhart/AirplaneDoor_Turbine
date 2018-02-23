@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="411.0">monitoring.StateModificationObserver</node>
+    <node x="678.0" y="310.0">logging.Logger</node>
+    <node x="0.0" y="619.0">main.Application</node>
+    <node x="0.0" y="169.0">state.LockedState</node>
+    <node x="450.0" y="0.0">state.IDoorState</node>
+    <node x="600.0" y="169.0">state.ClosedState</node>
+    <node x="0.0" y="310.0">monitoring.IStateObserver</node>
+    <node x="263.0" y="619.0">door.DoorButton</node>
+    <node x="936.0" y="310.0">main.Configuration</node>
+    <node x="300.0" y="169.0">state.UnlockedState</node>
+    <node x="333.0" y="310.0">door.AirplaneDoor</node>
+    <node x="900.0" y="169.0">state.OpenState</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="state.LockedState" target="state.IDoorState">
+      <point x="0.0" y="-48.0" />
+      <point x="140.0" y="139.0" />
+      <point x="485.0" y="139.0" />
+      <point x="-105.0" y="59.5" />
+    </edge>
+    <edge source="state.UnlockedState" target="state.IDoorState">
+      <point x="0.0" y="-48.0" />
+      <point x="440.0" y="149.0" />
+      <point x="555.0" y="149.0" />
+      <point x="-35.0" y="59.5" />
+    </edge>
+    <edge source="state.OpenState" target="state.IDoorState">
+      <point x="0.0" y="-48.0" />
+      <point x="1040.0" y="139.0" />
+      <point x="695.0" y="139.0" />
+      <point x="105.0" y="59.5" />
+    </edge>
+    <edge source="state.ClosedState" target="state.IDoorState">
+      <point x="0.0" y="-48.0" />
+      <point x="740.0" y="149.0" />
+      <point x="625.0" y="149.0" />
+      <point x="35.0" y="59.5" />
+    </edge>
+    <edge source="monitoring.StateModificationObserver" target="monitoring.IStateObserver">
+      <point x="0.0" y="-81.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5767195767195767" x="590.0" y="368.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

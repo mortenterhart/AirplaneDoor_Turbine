@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="544.6817610062894" y="1469.0">monitoring.StateModificationObserver</node>
+    <node x="760.0679245283018" y="672.0">logging.Logger</node>
+    <node x="373.50000000000006" y="1682.0">main.Application</node>
+    <node x="110.96624737945464" y="146.0">state.LockedState</node>
+    <node x="34.89014675052408" y="1300.0">state.IDoorState</node>
+    <node x="87.89832285115284" y="292.0">state.ClosedState</node>
+    <node x="452.06792452830183" y="760.5">monitoring.IStateObserver</node>
+    <node x="66.51509433962264" y="737.5">door.DoorButton</node>
+    <node x="756.5679245283018" y="438.0">main.Configuration</node>
+    <node x="35.716247379454614" y="0.0">state.UnlockedState</node>
+    <node x="217.09842767295603" y="980.0">door.AirplaneDoor</node>
+    <node x="51.59842767295601" y="482.0">state.OpenState</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="state.LockedState" target="state.IDoorState">
+      <point x="-93.33333333333334" y="48.0" />
+      <point x="157.6329140461213" y="267.0" />
+      <point x="11.0" y="267.0" />
+      <point x="11.0" y="1270.0" />
+      <point x="81.55681341719071" y="1270.0" />
+      <point x="-93.33333333333337" y="-59.5" />
+    </edge>
+    <edge source="state.LockedState" target="door.AirplaneDoor">
+      <point x="93.33333333333331" y="48.0" />
+      <point x="344.29958071278793" y="267.0" />
+      <point x="407.50000000000006" y="267.0" />
+      <point x="407.50000000000006" y="920.0" />
+      <point x="382.09842767295606" y="920.0" />
+      <point x="15.0" y="-115.0" />
+    </edge>
+    <edge source="state.OpenState" target="door.AirplaneDoor">
+      <point x="93.33333333333326" y="48.0" />
+      <point x="284.93176100628926" y="647.0" />
+      <point x="335.71624737945467" y="647.0" />
+      <point x="335.71624737945467" y="960.0" />
+      <point x="322.09842767295606" y="960.0" />
+      <point x="-45.0" y="-115.0" />
+    </edge>
+    <edge source="state.OpenState" target="state.IDoorState">
+      <point x="-93.33333333333331" y="48.0" />
+      <point x="98.26509433962269" y="647.0" />
+      <point x="47.015094339622635" y="647.0" />
+      <point x="47.015094339622635" y="1250.0" />
+      <point x="143.779035639413" y="1250.0" />
+      <point x="-31.111111111111086" y="-59.5" />
+    </edge>
+    <edge source="state.ClosedState" target="door.AirplaneDoor">
+      <point x="93.33333333333326" y="48.0" />
+      <point x="321.2316561844861" y="418.0" />
+      <point x="355.71624737945467" y="418.0" />
+      <point x="355.71624737945467" y="960.0" />
+      <point x="352.09842767295606" y="960.0" />
+      <point x="-15.0" y="-115.0" />
+    </edge>
+    <edge source="state.IDoorState" target="door.AirplaneDoor">
+      <point x="62.22222222222217" y="-59.5" />
+      <point x="237.11236897274625" y="1280.0" />
+      <point x="254.59842767295603" y="1280.0" />
+      <point x="-112.5" y="115.0" />
+    </edge>
+    <edge source="logging.Logger" target="main.Configuration">
+      <point x="0.0" y="-114.0" />
+      <point x="0.0" y="92.0" />
+    </edge>
+    <edge source="door.DoorButton" target="door.AirplaneDoor">
+      <point x="88.80000000000007" y="48.5" />
+      <point x="266.3150943396227" y="940.0" />
+      <point x="292.09842767295606" y="940.0" />
+      <point x="-75.0" y="-115.0" />
+    </edge>
+    <edge source="monitoring.IStateObserver" target="state.IDoorState">
+      <point x="36.0" y="25.5" />
+      <point x="632.0679245283018" y="1280.0" />
+      <point x="299.33459119496854" y="1280.0" />
+      <point x="124.44444444444446" y="-59.5" />
+    </edge>
+    <edge source="door.DoorButton" target="state.OpenState">
+      <point x="0.0" y="-48.5" />
+      <point x="177.51509433962264" y="647.0" />
+      <point x="191.598427672956" y="647.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="door.AirplaneDoor" target="logging.Logger">
+      <point x="135.0" y="-115.0" />
+      <point x="502.09842767295606" y="960.0" />
+      <point x="795.5679245283018" y="960.0" />
+      <point x="-71.0" y="114.0" />
+    </edge>
+    <edge source="monitoring.StateModificationObserver" target="state.IDoorState">
+      <point x="-96.0" y="-81.5" />
+      <point x="592.6817610062894" y="1444.0" />
+      <point x="244.89014675052408" y="1444.0" />
+      <point x="70.0" y="59.5" />
+    </edge>
+    <edge source="door.AirplaneDoor" target="state.IDoorState">
+      <point x="-37.5" y="115.0" />
+      <point x="329.59842767295606" y="1270.0" />
+      <point x="268.22348008385745" y="1270.0" />
+      <point x="93.33333333333337" y="-59.5" />
+    </edge>
+    <edge source="door.AirplaneDoor" target="monitoring.IStateObserver">
+      <point x="75.0" y="-115.0" />
+      <point x="442.09842767295606" y="940.0" />
+      <point x="488.06792452830183" y="940.0" />
+      <point x="-108.0" y="25.5" />
+    </edge>
+    <edge source="door.AirplaneDoor" target="door.DoorButton">
+      <point x="-105.0" y="-115.0" />
+      <point x="262.09842767295606" y="950.0" />
+      <point x="221.91509433962273" y="950.0" />
+      <point x="44.40000000000009" y="48.5" />
+    </edge>
+    <edge source="main.Application" target="state.IDoorState">
+      <point x="-87.20000000000005" y="-58.5" />
+      <point x="395.3" y="1662.0" />
+      <point x="104.89014675052408" y="1662.0" />
+      <point x="-70.0" y="59.5" />
+    </edge>
+    <edge source="state.ClosedState" target="state.IDoorState">
+      <point x="-93.33333333333331" y="48.0" />
+      <point x="134.56498951781953" y="418.0" />
+      <point x="36.015094339622635" y="418.0" />
+      <point x="36.015094339622635" y="1260.0" />
+      <point x="112.6679245283018" y="1260.0" />
+      <point x="-62.222222222222285" y="-59.5" />
+    </edge>
+    <edge source="monitoring.StateModificationObserver" target="monitoring.IStateObserver">
+      <point x="0.0" y="-81.5" />
+      <point x="688.6817610062894" y="950.0" />
+      <point x="704.0679245283018" y="950.0" />
+      <point x="108.0" y="25.5" />
+    </edge>
+    <edge source="state.UnlockedState" target="state.OpenState">
+      <point x="-35.0" y="48.0" />
+      <point x="140.71624737945461" y="121.0" />
+      <point x="77.39832285115284" y="121.0" />
+      <point x="77.39832285115284" y="408.0" />
+      <point x="121.598427672956" y="408.0" />
+      <point x="-70.0" y="-48.0" />
+    </edge>
+    <edge source="state.ClosedState" target="state.LockedState">
+      <point x="0.0" y="-48.0" />
+      <point x="227.89832285115284" y="267.0" />
+      <point x="250.96624737945464" y="267.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="state.LockedState" target="state.UnlockedState">
+      <point x="0.0" y="-48.0" />
+      <point x="250.96624737945464" y="121.0" />
+      <point x="210.71624737945461" y="121.0" />
+      <point x="35.0" y="48.0" />
+    </edge>
+    <edge source="state.UnlockedState" target="door.AirplaneDoor">
+      <point x="105.0" y="48.0" />
+      <point x="280.7162473794546" y="121.0" />
+      <point x="441.56792452830183" y="121.0" />
+      <point x="441.56792452830183" y="930.0" />
+      <point x="412.09842767295606" y="930.0" />
+      <point x="45.0" y="-115.0" />
+    </edge>
+    <edge source="state.UnlockedState" target="state.IDoorState">
+      <point x="-105.0" y="48.0" />
+      <point x="70.71624737945461" y="121.0" />
+      <point x="0.0" y="121.0" />
+      <point x="0.0" y="1280.0" />
+      <point x="50.445702306079625" y="1280.0" />
+      <point x="-124.44444444444446" y="-59.5" />
+    </edge>
+    <edge source="state.OpenState" target="state.ClosedState">
+      <point x="70.0" y="-48.0" />
+      <point x="261.598427672956" y="418.0" />
+      <point x="227.89832285115284" y="418.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="main.Application" target="logging.Logger">
+      <point x="87.20000000000005" y="-58.5" />
+      <point x="569.7" y="1662.0" />
+      <point x="898.7440251572325" y="1662.0" />
+      <point x="898.7440251572325" y="960.0" />
+      <point x="937.5679245283018" y="960.0" />
+      <point x="71.0" y="114.0" />
+    </edge>
+    <edge source="monitoring.StateModificationObserver" target="logging.Logger">
+      <point x="96.0" y="-81.5" />
+      <point x="784.6817610062894" y="1444.0" />
+      <point x="866.5679245283018" y="1444.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="main.Application" target="door.AirplaneDoor">
+      <point x="-43.59999999999991" y="-58.5" />
+      <point x="438.90000000000015" y="1662.0" />
+      <point x="471.50000000000006" y="1662.0" />
+      <point x="471.50000000000006" y="1270.0" />
+      <point x="404.59842767295606" y="1270.0" />
+      <point x="37.5" y="115.0" />
+    </edge>
+    <edge source="main.Application" target="monitoring.StateModificationObserver">
+      <point x="43.59999999999991" y="-58.5" />
+      <point x="526.0999999999999" y="1652.0" />
+      <point x="688.6817610062894" y="1652.0" />
+      <point x="0.0" y="81.5" />
+    </edge>
+    <edge source="door.DoorButton" target="state.IDoorState">
+      <point x="-44.39999999999998" y="48.5" />
+      <point x="133.11509433962266" y="960.0" />
+      <point x="129.96624737945464" y="960.0" />
+      <point x="129.96624737945464" y="1230.0" />
+      <point x="206.00125786163517" y="1230.0" />
+      <point x="31.111111111111086" y="-59.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.39910410326723933" x="446.35678837152375" y="378.75807176904215" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

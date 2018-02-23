@@ -12,7 +12,7 @@ public class Application {
     }
 
     private void execute() {
-        Logger.instance.log("## Start Application");
+        Logger.instance.log("## Start AirplaneDoor");
         AirplaneDoor door = new AirplaneDoor();
         door.addObserver(new StateModificationObserver(0));
         door.addObserver(new StateModificationObserver(1));
@@ -24,7 +24,7 @@ public class Application {
             Logger.instance.newLine();
         }
 
-        Logger.instance.log("## End Application");
+        Logger.instance.log("## End AirplaneDoor");
     }
 
     private void prepareShutdown() {

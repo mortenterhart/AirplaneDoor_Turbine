@@ -1,7 +1,7 @@
 package command;
 
-import robot.TurbineRobot;
+import robot.ShovelBladeRobot;
 
 public interface IRobotCommand {
-    void sendTo(TurbineRobot robot);
+    void sendTo(ShovelBladeRobot robot);
 }

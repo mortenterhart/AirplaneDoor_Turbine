@@ -65,6 +65,11 @@ public enum Logger {
         log(object.toString());
     }
 
+    public void logError(String message) {
+        write(message);
+        System.err.println(message);
+    }
+
     /**
      * Writes a new line in the log file and on standard output.
      */

@@ -1,5 +1,6 @@
 package blade;
 
+import logging.Logger;
 import robot.IShovelBladeVisitor;
 
 public class TitanBlade extends ShovelBlade {
@@ -8,7 +9,8 @@ public class TitanBlade extends ShovelBlade {
         super();
     }
 
-    public boolean checkStatus(IShovelBladeVisitor visitor) {
+    public boolean checkFunctionality(IShovelBladeVisitor visitor) {
+        Logger.instance.log("> TitanBlade: Checking functionality of this TitanBlade by visiting this element");
         return visitor.visit(this);
     }
 

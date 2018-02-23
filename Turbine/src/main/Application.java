@@ -1,10 +1,7 @@
 package main;
 
-import command.NextBladeCommand;
-import command.RobotRemoteControl;
-import command.StartCommand;
 import logging.Logger;
-import robot.TurbineRobot;
+import robot.ShovelBladeRobot;
 import turbine.AirplaneTurbine;
 
 public class Application {
@@ -14,17 +11,16 @@ public class Application {
     }
 
     private void execute() {
+        Logger.instance.log("## Start Turbine\n");
         AirplaneTurbine turbine = new AirplaneTurbine();
-        TurbineRobot robot = new TurbineRobot(turbine.getBlades());
-        RobotRemoteControl control = new RobotRemoteControl(robot);
+        ShovelBladeRobot robot = new ShovelBladeRobot(turbine.getBlades());
+        TurbineMechanic mechanic = new TurbineMechanic(robot);
+        Logger.instance.newLine();
 
-        control.setCommand(new StartCommand());
-        control.pressButton();
-
-        for (int i = 0; i < turbine.getBlades().size(); i++) {
-            control.setCommand(new NextBladeCommand());
-            control.pressButton();
-        }
+        mechanic.turnRobotOn();
+        mechanic.testAllBlades();
+        mechanic.turnRobotOff();
+        Logger.instance.log("## End Turbine");
     }
 
     private void prepareShutdown() {

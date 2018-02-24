@@ -14,6 +14,7 @@ von einem Mechaniker über eine Fernbedienung gesteuert.
 **HINWEIS**
 
 Die Klassendiagramme zu dieser Aufgabe liegen im [Verzeichnis `uml/`](uml).
+Darin sind sowohl von IntelliJ produzierte Diagramme als auch mit Enterprise Architect Erstellte. 
 
 ---
 

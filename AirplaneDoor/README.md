@@ -13,6 +13,7 @@ der Status von `S3` nach `S0` (offen). Eine Anzeige beobachtet kontinuierlich de
 **HINWEIS**
 
 Die Klassendiagramme zu dieser Aufgabe liegen im [Verzeichnis `uml/`](uml).
+Darin sind sowohl von IntelliJ produzierte Diagramme als auch mit Enterprise Architect Erstellte.
 
 ---
 

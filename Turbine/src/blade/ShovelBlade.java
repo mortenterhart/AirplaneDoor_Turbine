@@ -16,4 +16,8 @@ public abstract class ShovelBlade {
     public int getIndex() {
         return index;
     }
+
+    public static void resetIndexCounter() {
+        indexCounter = 1;
+    }
 }

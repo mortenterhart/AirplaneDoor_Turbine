@@ -3,65 +3,65 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="486.0">logging.Logger</node>
-    <node x="368.0" y="1000.0">main.Application</node>
+    <node x="0.0" y="530.0">logging.Logger</node>
+    <node x="368.0" y="1022.0">main.Application</node>
     <node x="36.0" y="0.0">robot.IShovelBladeVisitor</node>
-    <node x="572.0" y="882.0">command.NextBladeCommand</node>
-    <node x="736.0" y="170.0">blade.CarbonBlade</node>
+    <node x="286.0" y="904.0">command.NextBladeCommand</node>
+    <node x="736.0" y="192.0">blade.CarbonBlade</node>
     <node x="0.0" y="123.0">robot.ShovelBladeRobot</node>
-    <node x="258.0" y="486.0">main.Configuration</node>
-    <node x="286.0" y="882.0">command.StartCommand</node>
     <node x="544.0" y="0.0">blade.ShovelBlade</node>
-    <node x="352.0" y="170.0">blade.TitanBlade</node>
-    <node x="883.0" y="781.0">main.TurbineMechanic</node>
-    <node x="286.0" y="781.0">command.IRobotCommand</node>
-    <node x="631.0" y="1000.0">turbine.AirplaneTurbine</node>
-    <node x="0.0" y="1000.0">command.RobotRemoteControl</node>
-    <node x="0.0" y="882.0">command.StopCommand</node>
+    <node x="258.0" y="530.0">main.Configuration</node>
+    <node x="572.0" y="904.0">command.StartCommand</node>
+    <node x="352.0" y="192.0">blade.TitanBlade</node>
+    <node x="883.0" y="803.0">main.TurbineMechanic</node>
+    <node x="286.0" y="803.0">command.IRobotCommand</node>
+    <node x="631.0" y="1022.0">turbine.AirplaneTurbine</node>
+    <node x="0.0" y="1022.0">command.RobotRemoteControl</node>
+    <node x="0.0" y="904.0">command.StopCommand</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="command.StopCommand" target="command.IRobotCommand">
-      <point x="0.0" y="-36.5" />
-      <point x="133.0" y="857.0" />
-      <point x="330.3333333333333" y="857.0" />
-      <point x="-88.66666666666669" y="25.5" />
-    </edge>
     <edge source="blade.TitanBlade" target="blade.ShovelBlade">
       <point x="0.0" y="-59.5" />
-      <point x="534.0" y="145.0" />
-      <point x="635.0" y="145.0" />
-      <point x="-91.0" y="60.0" />
+      <point x="534.0" y="167.0" />
+      <point x="635.0" y="167.0" />
+      <point x="-91.0" y="71.0" />
     </edge>
-    <edge source="robot.ShovelBladeRobot" target="robot.IShovelBladeVisitor">
-      <point x="0.0" y="-159.0" />
-      <point x="0.0" y="36.5" />
+    <edge source="command.StopCommand" target="command.IRobotCommand">
+      <point x="0.0" y="-36.5" />
+      <point x="133.0" y="879.0" />
+      <point x="330.3333333333333" y="879.0" />
+      <point x="-88.66666666666669" y="25.5" />
     </edge>
     <edge source="command.NextBladeCommand" target="command.IRobotCommand">
       <point x="0.0" y="-36.5" />
-      <point x="705.0" y="857.0" />
-      <point x="507.6666666666667" y="857.0" />
-      <point x="88.66666666666669" y="25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="robot.ShovelBladeRobot" target="robot.IShovelBladeVisitor">
+      <point x="0.0" y="-181.0" />
+      <point x="0.0" y="36.5" />
     </edge>
     <edge source="command.StartCommand" target="command.IRobotCommand">
       <point x="0.0" y="-36.5" />
-      <point x="0.0" y="25.5" />
+      <point x="705.0" y="879.0" />
+      <point x="507.6666666666667" y="879.0" />
+      <point x="88.66666666666669" y="25.5" />
     </edge>
     <edge source="blade.CarbonBlade" target="blade.ShovelBlade">
       <point x="0.0" y="-59.5" />
-      <point x="918.0" y="145.0" />
-      <point x="817.0" y="145.0" />
-      <point x="91.0" y="60.0" />
+      <point x="918.0" y="167.0" />
+      <point x="817.0" y="167.0" />
+      <point x="91.0" y="71.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.37521514629948366" x="591.0" y="571.0" />
+  <settings layout="Hierarchic Group" zoom="0.3224436689669277" x="630.5482333616774" y="438.8238641331135" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
-    <Category>Constructors</Category>
-    <Category>Methods</Category>
-    <Category>Properties</Category>
     <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>

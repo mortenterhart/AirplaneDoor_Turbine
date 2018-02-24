@@ -12,7 +12,8 @@ import java.util.NoSuchElementException;
 public class ShovelBladeRobot implements IShovelBladeVisitor {
     private List<ShovelBlade> blades;
     private ListIterator<ShovelBlade> listIterator;
-    private boolean robotTurnedOff = true;
+    private ShovelBlade currentBlade;
+    private boolean robotTurnedOn = false;
 
     public ShovelBladeRobot(List<ShovelBlade> turbineBlades) {
         Logger.instance.log("--- Creating ShovelBladeRobot with list of blades and ListIterator");
@@ -22,12 +23,12 @@ public class ShovelBladeRobot implements IShovelBladeVisitor {
 
     public boolean visit(CarbonBlade blade) {
         Logger.instance.log("> ShovelBladeRobot: Visiting this CarbonBlade and checking if it is intact");
-        return blade != null && blade.isIntact();
+        return robotTurnedOn && blade != null && blade.isIntact();
     }
 
     public boolean visit(TitanBlade blade) {
         Logger.instance.log("> ShovelBladeRobot: Visiting this TitanBlade and checking if it is undamaged");
-        return blade != null && blade.isUndamaged();
+        return robotTurnedOn && blade != null && blade.isUndamaged();
     }
 
     public void start() {
@@ -36,12 +37,13 @@ public class ShovelBladeRobot implements IShovelBladeVisitor {
     }
 
     public boolean hasNextBlade() {
-        return !robotTurnedOff && listIterator.hasNext();
+        return robotTurnedOn && listIterator.hasNext();
     }
 
     public void checkNext() throws NoSuchElementException {
         if (hasNextBlade()) {
-            boolean checkSuccessful = listIterator.next().checkFunctionality(this);
+            currentBlade = listIterator.next();
+            boolean checkSuccessful = currentBlade.checkFunctionality(this);
             Logger.instance.log("> ShovelBladeRobot: Check of this blade was " +
                     (checkSuccessful ? "successful" : "not successful"));
             Logger.instance.log("    Blade is fully functional\n");
@@ -53,20 +55,34 @@ public class ShovelBladeRobot implements IShovelBladeVisitor {
                 "(use method hasNextBlade() in that case)");
     }
 
+    public void resetPosition() {
+        Logger.instance.log("> ShovelBladeRobot: Resetting the robot's position and starting again from index 1");
+        currentBlade = null;
+        listIterator = blades.listIterator();
+    }
+
     public void stop() {
         Logger.instance.log("> ShovelBladeRobot: Stopping robot ...\n");
         turnOff();
     }
 
     private void turnOn() {
-        robotTurnedOff = false;
+        robotTurnedOn = true;
     }
 
     private void turnOff() {
-        robotTurnedOff = true;
+        robotTurnedOn = false;
     }
 
     public int getNumberOfBlades() {
         return blades.size();
+    }
+
+    public ShovelBlade getCurrentBlade() {
+        return currentBlade;
+    }
+
+    public boolean isTurnedOn() {
+        return robotTurnedOn;
     }
 }

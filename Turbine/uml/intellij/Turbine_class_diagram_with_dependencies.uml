@@ -3,325 +3,303 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="855.2164112839844" y="234.0">logging.Logger</node>
-    <node x="1209.9722222222222" y="2179.0">main.Application</node>
-    <node x="1307.9877475247517" y="753.0">robot.IShovelBladeVisitor</node>
-    <node x="296.5" y="1788.5">command.NextBladeCommand</node>
-    <node x="1092.92106710671" y="574.0">blade.CarbonBlade</node>
-    <node x="1037.0536775106077" y="1245.0">robot.ShovelBladeRobot</node>
-    <node x="851.7164112839844" y="0.0">main.Configuration</node>
-    <node x="582.5" y="1788.5">command.StartCommand</node>
-    <node x="1101.7536775106078" y="876.0">blade.ShovelBlade</node>
-    <node x="1325.7536775106078" y="1046.0">blade.TitanBlade</node>
-    <node x="566.0" y="1956.0">main.TurbineMechanic</node>
-    <node x="620.5703304258992" y="1633.0">command.IRobotCommand</node>
-    <node x="1407.0127475247518" y="1367.0">turbine.AirplaneTurbine</node>
-    <node x="868.5" y="1754.0">command.RobotRemoteControl</node>
-    <node x="10.5" y="1788.5">command.StopCommand</node>
+    <node x="483.80198116560064" y="234.0">logging.Logger</node>
+    <node x="1335.2296997157068" y="543.0">main.Application</node>
+    <node x="394.7267857142857" y="731.0">robot.IShovelBladeVisitor</node>
+    <node x="730.1686478322673" y="1663.5">command.NextBladeCommand</node>
+    <node x="600.3019811656006" y="542.0">blade.CarbonBlade</node>
+    <node x="361.2186478322674" y="1096.0">robot.ShovelBladeRobot</node>
+    <node x="359.26845238095234" y="864.0">blade.ShovelBlade</node>
+    <node x="480.30198116560064" y="0.0">main.Configuration</node>
+    <node x="1016.1686478322673" y="1663.5">command.StartCommand</node>
+    <node x="195.61448116560058" y="542.0">blade.TitanBlade</node>
+    <node x="245.714880952381" y="1841.0">main.TurbineMechanic</node>
+    <node x="525.2186478322674" y="1518.0">command.IRobotCommand</node>
+    <node x="774.2496002132198" y="1240.0">turbine.AirplaneTurbine</node>
+    <node x="387.1686478322673" y="1629.0">command.RobotRemoteControl</node>
+    <node x="101.16864783226737" y="1663.5">command.StopCommand</node>
   </nodes>
   <notes />
   <edges>
     <edge source="turbine.AirplaneTurbine" target="logging.Logger">
       <point x="83.59999999999991" y="-37.0" />
-      <point x="1595.1127475247517" y="1225.0" />
-      <point x="1711.2536775106078" y="1225.0" />
-      <point x="1711.2536775106078" y="514.0" />
-      <point x="1036.2664112839843" y="514.0" />
-      <point x="74.55000000000007" y="125.0" />
+      <point x="962.3496002132197" y="1076.0" />
+      <point x="1026.4662668798862" y="1076.0" />
+      <point x="1026.4662668798862" y="512.0" />
+      <point x="622.2519811656007" y="512.0" />
+      <point x="31.950000000000045" y="114.0" />
+    </edge>
+    <edge source="blade.TitanBlade" target="logging.Logger">
+      <point x="0.0" y="-59.5" />
+      <point x="377.6144811656006" y="522.0" />
+      <point x="579.6519811656007" y="522.0" />
+      <point x="-10.649999999999977" y="114.0" />
     </edge>
     <edge source="turbine.AirplaneTurbine" target="blade.CarbonBlade">
       <point x="41.799999999999955" y="-37.0" />
-      <point x="1553.3127475247518" y="1215.0" />
-      <point x="1700.2536775106078" y="1215.0" />
-      <point x="1700.2536775106078" y="713.0" />
-      <point x="1426.5877337733766" y="713.0" />
+      <point x="920.5496002132197" y="1076.0" />
+      <point x="931.5496002132197" y="1076.0" />
+      <point x="931.5496002132197" y="711.0" />
+      <point x="933.9686478322672" y="711.0" />
       <point x="151.66666666666652" y="59.5" />
     </edge>
-    <edge source="blade.TitanBlade" target="logging.Logger">
-      <point x="145.60000000000002" y="-59.5" />
-      <point x="1653.3536775106077" y="1026.0" />
-      <point x="1623.0" y="1026.0" />
-      <point x="1623.0" y="524.0" />
-      <point x="1014.9664112839844" y="524.0" />
-      <point x="53.25" y="125.0" />
-    </edge>
     <edge source="command.NextBladeCommand" target="logging.Logger">
-      <point x="-88.66666666666663" y="-36.5" />
-      <point x="340.83333333333337" y="1714.0" />
-      <point x="155.4794141914183" y="1714.0" />
-      <point x="155.4794141914183" y="544.0" />
-      <point x="908.4664112839844" y="544.0" />
-      <point x="-53.25" y="125.0" />
+      <point x="88.66666666666669" y="-36.5" />
+      <point x="951.8353144989339" y="1609.0" />
+      <point x="1228.5184523809526" y="1609.0" />
+      <point x="1228.5184523809526" y="502.0" />
+      <point x="643.5519811656008" y="502.0" />
+      <point x="53.250000000000114" y="114.0" />
     </edge>
     <edge source="main.TurbineMechanic" target="logging.Logger">
       <point x="-128.1428571428571" y="-81.5" />
-      <point x="587.3571428571429" y="1936.0" />
-      <point x="0.0" y="1936.0" />
-      <point x="0.0" y="524.0" />
-      <point x="865.8664112839842" y="524.0" />
-      <point x="-95.85000000000002" y="125.0" />
+      <point x="267.0720238095239" y="1821.0" />
+      <point x="0.0" y="1821.0" />
+      <point x="0.0" y="482.0" />
+      <point x="494.4519811656006" y="482.0" />
+      <point x="-95.85000000000002" y="114.0" />
     </edge>
     <edge source="command.RobotRemoteControl" target="robot.ShovelBladeRobot">
-      <point x="64.59999999999991" y="-71.0" />
-      <point x="1094.6" y="1724.0" />
-      <point x="1193.6536637592326" y="1724.0" />
-      <point x="1193.6536637592326" y="1613.0" />
-      <point x="1190.5536775106077" y="1613.0" />
-      <point x="0.0" y="159.0" />
-    </edge>
-    <edge source="command.StartCommand" target="command.IRobotCommand">
-      <point x="0.0" y="-36.5" />
-      <point x="715.5" y="1734.0" />
-      <point x="753.5703304258992" y="1734.0" />
-      <point x="0.0" y="25.5" />
-    </edge>
-    <edge source="blade.ShovelBlade" target="robot.IShovelBladeVisitor">
-      <point x="121.33333333333326" y="-60.0" />
-      <point x="1405.087010843941" y="856.0" />
-      <point x="1396.1127475247517" y="856.0" />
-      <point x="-29.375" y="36.5" />
+      <point x="-64.59999999999991" y="-71.0" />
+      <point x="484.0686478322674" y="1599.0" />
+      <point x="432.9684523809525" y="1599.0" />
+      <point x="432.9684523809525" y="1498.0" />
+      <point x="470.8615049751245" y="1498.0" />
+      <point x="-43.85714285714289" y="181.0" />
     </edge>
     <edge source="command.RobotRemoteControl" target="command.IRobotCommand">
-      <point x="-64.60000000000002" y="-71.0" />
-      <point x="965.3999999999999" y="1714.0" />
-      <point x="859.9703304258992" y="1714.0" />
+      <point x="64.59999999999991" y="-71.0" />
+      <point x="613.2686478322672" y="1609.0" />
+      <point x="605.0186478322673" y="1609.0" />
+      <point x="-53.200000000000045" y="25.5" />
+    </edge>
+    <edge source="blade.ShovelBlade" target="robot.IShovelBladeVisitor">
+      <point x="0.0" y="-71.0" />
+      <point x="541.2684523809523" y="844.0" />
+      <point x="570.9767857142857" y="844.0" />
+      <point x="58.75" y="36.5" />
+    </edge>
+    <edge source="command.StartCommand" target="command.IRobotCommand">
+      <point x="-88.66666666666674" y="-36.5" />
+      <point x="1060.5019811656007" y="1599.0" />
+      <point x="764.6186478322674" y="1599.0" />
       <point x="106.39999999999998" y="25.5" />
     </edge>
     <edge source="robot.ShovelBladeRobot" target="blade.ShovelBlade">
-      <point x="87.71428571428578" y="-159.0" />
-      <point x="1278.2679632248935" y="1205.0" />
-      <point x="1191.5627475247518" y="1205.0" />
-      <point x="1191.5627475247518" y="1026.0" />
-      <point x="1231.7536775106078" y="1026.0" />
-      <point x="-52.0" y="60.0" />
+      <point x="43.85714285714289" y="-181.0" />
+      <point x="558.5757906894103" y="1036.0" />
+      <point x="468.4684523809524" y="1036.0" />
+      <point x="-72.79999999999995" y="71.0" />
     </edge>
     <edge source="main.TurbineMechanic" target="robot.ShovelBladeRobot">
-      <point x="128.1428571428571" y="-81.5" />
-      <point x="843.6428571428571" y="1936.0" />
-      <point x="1296.9722222222222" y="1936.0" />
-      <point x="1296.9722222222222" y="1603.0" />
-      <point x="1258.7758997328299" y="1603.0" />
-      <point x="68.22222222222217" y="159.0" />
-    </edge>
-    <edge source="logging.Logger" target="main.Configuration">
-      <point x="0.0" y="-125.0" />
-      <point x="0.0" y="92.0" />
+      <point x="-85.42857142857133" y="-81.5" />
+      <point x="309.7863095238097" y="1811.0" />
+      <point x="90.66864783226737" y="1811.0" />
+      <point x="90.66864783226737" y="1488.0" />
+      <point x="383.14721926083894" y="1488.0" />
+      <point x="-131.57142857142844" y="181.0" />
     </edge>
     <edge source="command.StartCommand" target="logging.Logger">
-      <point x="-88.66666666666669" y="-36.5" />
-      <point x="626.8333333333333" y="1704.0" />
-      <point x="166.4794141914183" y="1704.0" />
-      <point x="166.4794141914183" y="554.0" />
-      <point x="929.7664112839843" y="554.0" />
-      <point x="-31.950000000000045" y="125.0" />
+      <point x="88.66666666666663" y="-36.5" />
+      <point x="1237.835314498934" y="1609.0" />
+      <point x="1324.7296997157068" y="1609.0" />
+      <point x="1324.7296997157068" y="492.0" />
+      <point x="664.8519811656007" y="492.0" />
+      <point x="74.55000000000007" y="114.0" />
+    </edge>
+    <edge source="logging.Logger" target="main.Configuration">
+      <point x="0.0" y="-114.0" />
+      <point x="0.0" y="92.0" />
     </edge>
     <edge source="blade.TitanBlade" target="robot.IShovelBladeVisitor">
-      <point x="72.79999999999995" y="-59.5" />
-      <point x="1580.5536775106077" y="1026.0" />
-      <point x="1567.9411775106078" y="1026.0" />
-      <point x="1567.9411775106078" y="856.0" />
-      <point x="1513.6127475247517" y="856.0" />
-      <point x="88.125" y="36.5" />
+      <point x="91.0" y="59.5" />
+      <point x="468.6144811656006" y="711.0" />
+      <point x="482.8517857142857" y="711.0" />
+      <point x="-29.375" y="-36.5" />
     </edge>
     <edge source="main.TurbineMechanic" target="command.StopCommand">
-      <point x="-85.42857142857133" y="-81.5" />
-      <point x="630.0714285714287" y="1926.0" />
-      <point x="143.5" y="1926.0" />
+      <point x="-42.714285714285666" y="-81.5" />
+      <point x="352.50059523809534" y="1801.0" />
+      <point x="234.16864783226737" y="1801.0" />
       <point x="0.0" y="36.5" />
     </edge>
     <edge source="command.StartCommand" target="robot.ShovelBladeRobot">
-      <point x="88.66666666666669" y="-36.5" />
-      <point x="804.1666666666666" y="1734.0" />
-      <point x="903.633077950651" y="1734.0" />
-      <point x="903.633077950651" y="1613.0" />
-      <point x="1156.4425663994966" y="1613.0" />
-      <point x="-34.111111111111086" y="159.0" />
-    </edge>
-    <edge source="main.Application" target="main.TurbineMechanic">
-      <point x="-93.42857142857156" y="-58.5" />
-      <point x="1225.5436507936506" y="2159.0" />
-      <point x="640.75" y="2159.0" />
-      <point x="-74.75" y="81.5" />
-    </edge>
-    <edge source="command.NextBladeCommand" target="command.IRobotCommand">
-      <point x="88.66666666666663" y="-36.5" />
-      <point x="518.1666666666666" y="1734.0" />
-      <point x="700.3703304258992" y="1734.0" />
-      <point x="-53.200000000000045" y="25.5" />
+      <point x="0.0" y="-36.5" />
+      <point x="1149.1686478322672" y="1589.0" />
+      <point x="1045.0019811656007" y="1589.0" />
+      <point x="1045.0019811656007" y="1478.0" />
+      <point x="646.290076403696" y="1478.0" />
+      <point x="131.57142857142867" y="181.0" />
     </edge>
     <edge source="command.StopCommand" target="logging.Logger">
       <point x="-88.66666666666674" y="-36.5" />
-      <point x="54.83333333333326" y="1734.0" />
-      <point x="60.75" y="1734.0" />
-      <point x="60.75" y="534.0" />
-      <point x="887.1664112839843" y="534.0" />
-      <point x="-74.55000000000001" y="125.0" />
+      <point x="145.50198116560063" y="1609.0" />
+      <point x="11.0" y="1609.0" />
+      <point x="11.0" y="492.0" />
+      <point x="515.7519811656007" y="492.0" />
+      <point x="-74.54999999999995" y="114.0" />
+    </edge>
+    <edge source="command.NextBladeCommand" target="command.IRobotCommand">
+      <point x="-88.66666666666669" y="-36.5" />
+      <point x="774.5019811656007" y="1609.0" />
+      <point x="711.4186478322674" y="1609.0" />
+      <point x="53.200000000000045" y="25.5" />
     </edge>
     <edge source="robot.ShovelBladeRobot" target="blade.TitanBlade">
-      <point x="131.57142857142844" y="-159.0" />
-      <point x="1322.1251060820362" y="1225.0" />
-      <point x="1416.7536775106078" y="1225.0" />
-      <point x="-91.0" y="59.5" />
-    </edge>
-    <edge source="robot.ShovelBladeRobot" target="blade.CarbonBlade">
-      <point x="-87.71428571428578" y="-159.0" />
-      <point x="1102.839391796322" y="1215.0" />
-      <point x="1024.5179632248933" y="1215.0" />
-      <point x="1024.5179632248933" y="733.0" />
-      <point x="1123.2544004400434" y="733.0" />
+      <point x="-87.71428571428578" y="-181.0" />
+      <point x="427.0043621179816" y="1066.0" />
+      <point x="271.0936478322672" y="1066.0" />
+      <point x="271.0936478322672" y="711.0" />
+      <point x="225.94781449893384" y="711.0" />
       <point x="-151.66666666666674" y="59.5" />
     </edge>
+    <edge source="robot.ShovelBladeRobot" target="blade.CarbonBlade">
+      <point x="131.57142857142844" y="-181.0" />
+      <point x="646.2900764036958" y="1076.0" />
+      <point x="830.8517857142857" y="1076.0" />
+      <point x="830.8517857142857" y="711.0" />
+      <point x="873.3019811656006" y="711.0" />
+      <point x="91.0" y="59.5" />
+    </edge>
     <edge source="turbine.AirplaneTurbine" target="blade.ShovelBlade">
-      <point x="-83.59999999999991" y="-37.0" />
-      <point x="1427.912747524752" y="1195.0" />
-      <point x="1261.75" y="1195.0" />
-      <point x="1261.75" y="1016.0" />
-      <point x="1283.7536775106078" y="1016.0" />
-      <point x="0.0" y="60.0" />
+      <point x="-41.799999999999955" y="-37.0" />
+      <point x="836.9496002132198" y="1056.0" />
+      <point x="686.8684523809525" y="1056.0" />
+      <point x="145.60000000000014" y="71.0" />
     </edge>
     <edge source="main.TurbineMechanic" target="command.NextBladeCommand">
-      <point x="-42.714285714285666" y="-81.5" />
-      <point x="672.7857142857142" y="1916.0" />
-      <point x="429.5" y="1916.0" />
+      <point x="85.42857142857144" y="-81.5" />
+      <point x="480.64345238095245" y="1811.0" />
+      <point x="863.1686478322673" y="1811.0" />
       <point x="0.0" y="36.5" />
     </edge>
     <edge source="main.TurbineMechanic" target="command.RobotRemoteControl">
       <point x="42.71428571428578" y="-81.5" />
-      <point x="758.2142857142858" y="1916.0" />
-      <point x="949.25" y="1916.0" />
-      <point x="-80.75" y="71.0" />
-    </edge>
-    <edge source="main.Application" target="robot.ShovelBladeRobot">
-      <point x="0.0" y="-58.5" />
-      <point x="1318.9722222222222" y="1613.0" />
-      <point x="1326.998121955052" y="1613.0" />
-      <point x="136.44444444444434" y="159.0" />
-    </edge>
-    <edge source="command.StopCommand" target="command.IRobotCommand">
-      <point x="88.66666666666663" y="-36.5" />
-      <point x="232.16666666666663" y="1724.0" />
-      <point x="647.1703304258992" y="1724.0" />
-      <point x="-106.39999999999998" y="25.5" />
+      <point x="437.9291666666668" y="1801.0" />
+      <point x="629.4186478322673" y="1801.0" />
+      <point x="80.75" y="71.0" />
     </edge>
     <edge source="blade.TitanBlade" target="blade.ShovelBlade">
-      <point x="-72.80000000000007" y="-59.5" />
-      <point x="1434.9536775106076" y="1026.0" />
-      <point x="1439.7536775106078" y="1026.0" />
-      <point x="156.0" y="60.0" />
+      <point x="-30.333333333333258" y="59.5" />
+      <point x="347.2811478322673" y="711.0" />
+      <point x="357.6769811656006" y="711.0" />
+      <point x="357.6769811656006" y="824.0" />
+      <point x="468.4684523809524" y="824.0" />
+      <point x="-72.79999999999995" y="-71.0" />
+    </edge>
+    <edge source="command.StopCommand" target="command.IRobotCommand">
+      <point x="88.66666666666674" y="-36.5" />
+      <point x="322.8353144989341" y="1609.0" />
+      <point x="551.8186478322674" y="1609.0" />
+      <point x="-106.39999999999998" y="25.5" />
     </edge>
     <edge source="robot.ShovelBladeRobot" target="robot.IShovelBladeVisitor">
-      <point x="-43.85714285714289" y="-159.0" />
-      <point x="1146.6965346534648" y="1205.0" />
-      <point x="1035.5179632248933" y="1205.0" />
-      <point x="1035.5179632248933" y="856.0" />
-      <point x="1337.3627475247517" y="856.0" />
-      <point x="-88.125" y="36.5" />
+      <point x="-43.85714285714289" y="-181.0" />
+      <point x="470.8615049751245" y="1056.0" />
+      <point x="348.76845238095234" y="1056.0" />
+      <point x="348.76845238095234" y="844.0" />
+      <point x="453.4767857142857" y="844.0" />
+      <point x="-58.75" y="36.5" />
     </edge>
     <edge source="command.NextBladeCommand" target="robot.ShovelBladeRobot">
       <point x="0.0" y="-36.5" />
-      <point x="429.5" y="1714.0" />
-      <point x="501.3294004400433" y="1714.0" />
-      <point x="501.3294004400433" y="1593.0" />
-      <point x="1088.2203441772742" y="1593.0" />
-      <point x="-102.33333333333337" y="159.0" />
+      <point x="863.1686478322673" y="1609.0" />
+      <point x="896.5019811656007" y="1609.0" />
+      <point x="896.5019811656007" y="1488.0" />
+      <point x="602.4329335465532" y="1488.0" />
+      <point x="87.71428571428578" y="181.0" />
     </edge>
-    <edge source="command.RobotRemoteControl" target="logging.Logger">
-      <point x="0.0" y="-71.0" />
-      <point x="1030.0" y="1734.0" />
-      <point x="991.8036775106077" y="1734.0" />
-      <point x="991.8036775106077" y="554.0" />
-      <point x="951.0664112839843" y="554.0" />
-      <point x="-10.649999999999977" y="125.0" />
+    <edge source="blade.CarbonBlade" target="blade.ShovelBlade">
+      <point x="-30.333333333333258" y="59.5" />
+      <point x="751.9686478322674" y="711.0" />
+      <point x="716.9519811656006" y="711.0" />
+      <point x="716.9519811656006" y="834.0" />
+      <point x="614.0684523809523" y="834.0" />
+      <point x="72.79999999999995" y="-71.0" />
     </edge>
     <edge source="turbine.AirplaneTurbine" target="blade.TitanBlade">
       <point x="0.0" y="-37.0" />
-      <point x="1511.5127475247518" y="1205.0" />
-      <point x="1598.7536775106078" y="1205.0" />
-      <point x="91.0" y="59.5" />
+      <point x="878.7496002132198" y="1046.0" />
+      <point x="808.8517857142857" y="1046.0" />
+      <point x="808.8517857142857" y="691.0" />
+      <point x="529.2811478322672" y="691.0" />
+      <point x="151.66666666666652" y="59.5" />
     </edge>
-    <edge source="blade.CarbonBlade" target="blade.ShovelBlade">
-      <point x="-91.0" y="59.5" />
-      <point x="1183.92106710671" y="723.0" />
-      <point x="1171.0627475247518" y="723.0" />
-      <point x="1171.0627475247518" y="846.0" />
-      <point x="1162.4203441772745" y="846.0" />
-      <point x="-121.33333333333326" y="-60.0" />
+    <edge source="command.RobotRemoteControl" target="logging.Logger">
+      <point x="-129.20000000000005" y="-71.0" />
+      <point x="419.46864783226727" y="1599.0" />
+      <point x="22.0" y="1599.0" />
+      <point x="22.0" y="502.0" />
+      <point x="537.0519811656006" y="502.0" />
+      <point x="-53.25" y="114.0" />
     </edge>
     <edge source="command.StopCommand" target="robot.ShovelBladeRobot">
       <point x="0.0" y="-36.5" />
-      <point x="143.5" y="1734.0" />
-      <point x="215.3294004400433" y="1734.0" />
-      <point x="215.3294004400433" y="1583.0" />
-      <point x="1054.1092330661631" y="1583.0" />
-      <point x="-136.44444444444446" y="159.0" />
+      <point x="234.16864783226737" y="1498.0" />
+      <point x="427.0043621179816" y="1498.0" />
+      <point x="-87.71428571428578" y="181.0" />
     </edge>
     <edge source="robot.ShovelBladeRobot" target="logging.Logger">
-      <point x="-131.57142857142867" y="-159.0" />
-      <point x="1058.982248939179" y="1225.0" />
-      <point x="1013.5179632248933" y="1225.0" />
-      <point x="1013.5179632248933" y="544.0" />
-      <point x="972.3664112839845" y="544.0" />
-      <point x="10.650000000000091" y="125.0" />
+      <point x="-131.57142857142867" y="-181.0" />
+      <point x="383.1472192608387" y="1076.0" />
+      <point x="185.11448116560058" y="1076.0" />
+      <point x="185.11448116560058" y="512.0" />
+      <point x="558.3519811656007" y="512.0" />
+      <point x="-31.949999999999932" y="114.0" />
     </edge>
     <edge source="main.TurbineMechanic" target="command.StartCommand">
-      <point x="0.0" y="-81.5" />
+      <point x="128.1428571428571" y="-81.5" />
+      <point x="523.3577380952381" y="1821.0" />
+      <point x="1149.1686478322672" y="1821.0" />
       <point x="0.0" y="36.5" />
     </edge>
     <edge source="command.IRobotCommand" target="robot.ShovelBladeRobot">
       <point x="0.0" y="-25.5" />
-      <point x="753.5703304258992" y="1603.0" />
-      <point x="1122.3314552883855" y="1603.0" />
-      <point x="-68.22222222222217" y="159.0" />
+      <point x="658.2186478322674" y="1498.0" />
+      <point x="558.5757906894103" y="1498.0" />
+      <point x="43.85714285714289" y="181.0" />
     </edge>
     <edge source="main.Application" target="logging.Logger">
-      <point x="93.42857142857133" y="-58.5" />
-      <point x="1412.4007936507935" y="2159.0" />
-      <point x="1722.2536775106078" y="2159.0" />
-      <point x="1722.2536775106078" y="504.0" />
-      <point x="1057.5664112839845" y="504.0" />
-      <point x="95.85000000000014" y="125.0" />
+      <point x="0.0" y="-58.5" />
+      <point x="1444.2296997157068" y="482.0" />
+      <point x="686.1519811656007" y="482.0" />
+      <point x="95.85000000000002" y="114.0" />
     </edge>
     <edge source="blade.CarbonBlade" target="logging.Logger">
       <point x="0.0" y="-59.5" />
-      <point x="1274.92106710671" y="534.0" />
-      <point x="993.6664112839844" y="534.0" />
-      <point x="31.950000000000045" y="125.0" />
+      <point x="782.3019811656006" y="522.0" />
+      <point x="600.9519811656006" y="522.0" />
+      <point x="10.649999999999977" y="114.0" />
     </edge>
     <edge source="robot.IShovelBladeVisitor" target="blade.CarbonBlade">
-      <point x="-58.75" y="-36.5" />
-      <point x="1366.7377475247517" y="733.0" />
-      <point x="1305.2544004400434" y="733.0" />
-      <point x="30.333333333333258" y="59.5" />
-    </edge>
-    <edge source="main.Application" target="turbine.AirplaneTurbine">
-      <point x="31.14285714285711" y="-58.5" />
-      <point x="1350.1150793650793" y="2139.0" />
-      <point x="1552.7627475247518" y="2139.0" />
-      <point x="1552.7627475247518" y="1613.0" />
-      <point x="1459.2627475247518" y="1613.0" />
-      <point x="-52.25" y="37.0" />
-    </edge>
-    <edge source="robot.IShovelBladeVisitor" target="blade.TitanBlade">
-      <point x="29.375" y="36.5" />
-      <point x="1454.8627475247517" y="856.0" />
-      <point x="1507.7536775106078" y="856.0" />
-      <point x="0.0" y="-59.5" />
+      <point x="29.375" y="-36.5" />
+      <point x="541.6017857142857" y="701.0" />
+      <point x="630.6353144989339" y="701.0" />
+      <point x="-151.66666666666674" y="59.5" />
     </edge>
     <edge source="blade.CarbonBlade" target="robot.IShovelBladeVisitor">
-      <point x="91.0" y="59.5" />
-      <point x="1365.92106710671" y="723.0" />
-      <point x="1484.2377475247517" y="723.0" />
-      <point x="58.75" y="-36.5" />
+      <point x="-91.0" y="59.5" />
+      <point x="691.3019811656006" y="711.0" />
+      <point x="600.3517857142857" y="711.0" />
+      <point x="88.125" y="-36.5" />
+    </edge>
+    <edge source="robot.IShovelBladeVisitor" target="blade.TitanBlade">
+      <point x="-88.125" y="-36.5" />
+      <point x="424.1017857142857" y="711.0" />
+      <point x="407.94781449893384" y="711.0" />
+      <point x="30.333333333333258" y="59.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.37521514629948366" x="591.0" y="571.0" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="0.44406276400057054" x="827.2047415974781" y="880.2462799427883" />
+  <SelectedNodes>
+    <node>logging.Logger</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
-    <Category>Constructors</Category>
-    <Category>Methods</Category>
-    <Category>Properties</Category>
     <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
